@@ -1,33 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title></title>
- <link href="/" rel="self"/>
- <link href=""/>
- <updated>2014-12-26T17:26:38+08:00</updated>
- <id></id>
+ <title>首页</title>
+ <link href="http://username.github.io/" rel="self"/>
+ <link href="http://username.github.io"/>
+ <updated>2014-12-27T01:02:17+08:00</updated>
+ <id>http://username.github.io</id>
  <author>
    <name></name>
-   <email></email>
+   <email>bliu238@gmail.com</email>
  </author>
 
  
  <entry>
-   <title>你好，世界</title>
-   <link href="/learn/2014/12/26/.html"/>
+   <title>用 github+jekyll 搭建个人 blog</title>
+   <link href="http://username.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/"/>
    <updated>2014-12-26T00:00:00+08:00</updated>
-   <id>/learn/2014/12/26/</id>
+   <id>http://username.github.io/</id>
    <content type="html">
-&lt;p&gt;{page.date|date_to_string}
- 这是博客的第一篇文章，我想趁自己还记得一些步骤的情况下，把我搭建个人空间的步骤记录下来，过程中参考了不少网络资料，我将把这些资料链接放到文章末尾。如果有什么新的技术，欢迎在文章末尾留言^_^&lt;/p&gt;
+&lt;p&gt;本文笔记本配置：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统：OS X Yosemite version 10.10.1&lt;/li&gt;
+  &lt;li&gt;处理器：2.8 GHz Intel Core i7&lt;/li&gt;
+  &lt;li&gt;内存：4 GB 1333 MHz DDR3&lt;/li&gt;
+  &lt;li&gt;显卡：Intel HD Graphics 3000 384 MB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这是博客的第一篇文章，我想趁自己还记得一些细节的情况下，把我搭建个人空间的步骤记录下来，过程中阅读了不少网络资料，我将把这些&lt;!-- more --&gt;资料链接放到文章中供大家学习参考。如果有什么建议和好的 idea，欢迎在文章末尾留言^_^&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;本文目录    &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;a-hreft1-why-githubjekyll-a&quot;&gt;&lt;a href=&quot;#t1&quot;&gt; Why github+jekyll ?&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;a-hreft2--github-a&quot;&gt;&lt;a href=&quot;#t2&quot;&gt; 申请 Github 账号&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;a-hreft3--jekylla&quot;&gt;&lt;a href=&quot;#t3&quot;&gt; 安装 Jekyll&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-namet11-why-githubjekyll-a&quot;&gt;&lt;a name=&quot;t1&quot;&gt;1. Why github+jekyll ?&lt;/a&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GitHub是一个用于使用Git版本控制系统的项目的基于互联网的存取服务。它是由GitHub公司（先前被称作用Logical Awesome）的开发者Chris Wanstrath, PJ Hyett, 和 Tom Preston-Werner 使用Ruby on Rails写成的。GitHub同时提供商业账户和为开源项目提供的免费账户。根据在2009年的Git用户调查，GitHub是最流行的Git存取站点。
+它提供了像 feeds，followers 和显示开发者们怎样在他们的版本库的版本上工作的网络图表。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;—— 源自&lt;a href=&quot;http://blog.csdn.net&quot;&gt;Reactor1379的博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GitHub十分“给力”，不仅为程序员提供了免费源代码托管空间，还为程序员提供了一个社交平台，允许大家在GitHub上创建自己的博客网站或主页（github pages），而且免费，不限流量，还可以绑定自己的域名。不过遗憾的是，GitHub提供的主页实际上是基于GitHub的源代码实现的，所以只支持上传静态的网页，不能在上面创建真正的博客系统。不过，不幸中的万幸是，GitHub支持一种叫jekyll的静态页面转换引擎，也就是说只要上传符合jekyll规范的文件，GitHub会用这种模板引擎为你转化静态页面和网站。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;—— 源自&lt;a href=&quot;http://www.pchou.info&quot;&gt;P_Chou的博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-namet22--github-a&quot;&gt;&lt;a name=&quot;t2&quot;&gt;2. 申请 Github 空间&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;进入 github, 点击右边中间的绿色按钮 new repository，然后可以看到下面的界面，repository name 填写你自己的 username.github.io（注意注意大小写一定要与你注册的用户名一致 这样才能保证浏览器输入username.github.io时直接访问你的博客）&lt;/p&gt;
+
+&lt;h2 id=&quot;a-namet33--jekylla&quot;&gt;&lt;a name=&quot;t3&quot;&gt;3. 安装 Jekyll&lt;/a&gt;&lt;/h2&gt;
 </content>
  </entry>
  
  <entry>
    <title>Jekyll Introduction</title>
-   <link href="/lessons/2011/12/29/jekyll-introduction.html"/>
+   <link href="http://username.github.io/lessons/jekyll-introduction"/>
    <updated>2011-12-29T00:00:00+08:00</updated>
-   <id>/lessons/2011/12/29/jekyll-introduction</id>
+   <id>http://username.github.io/lessons/jekyll-introduction</id>
    <content type="html">
 &lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it. 
 Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it &lt;!-- more --&gt;does.&lt;/p&gt;

@@ -35,16 +35,15 @@ Here's a sample "posts list".
 </ul>
 -->{% endcomment %}
 
-<table>
-<ul class="inline">
+
+
   {% for post in site.posts %}
-    <tr>
-    <td>
+  <table>
+      <tr>
        <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a></li>
-       <span>{{ post.date| date: "%Y-%m-%d" }} | 分类:<a href="{{ BASE_PATH }}/categories.html" style="color:grey">{{ post.category }}</a> | 标签:{% for tag in post.tags %} <a href="{{ BASE_PATH }}/tags.html" style="color:grey">{{ tag }}</a> {% if forloop.last != true %} {% endif %} {% endfor %}</span> 
-      &raquo;<br/>{{ post.content | split : '<!-- more -->' | first }}...
-      </td>
+       <span>{{ post.date| date: "%Y-%m-%d" }} | 分类:<a href="{{ BASE_PATH }}/categories.html" style="color:grey">{{ post.category }}</a> | 标签:{% for tag in post.tags %} <a href="{{ BASE_PATH }}/tags.html" style="color:grey">{{ tag }}</a> {% if forloop.last != true %} {% endif %} {% endfor %}
+      &raquo;</span>
+      {{ post.content | split : '<!-- more -->' | first }}...
     </tr>
   {% endfor %}
-</ul>
 </table>

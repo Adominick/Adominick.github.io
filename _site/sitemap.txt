@@ -1,13 +1,13 @@
 
-/archive.html
-/atom.xml
-/categories.html
-/index.html
-/pages.html
-/rss.xml
-/sitemap.txt
-/tags.html
-/zcontact.html
+http://username.github.io/archive.html
+http://username.github.io/atom.xml
+http://username.github.io/categories.html
+http://username.github.io/index.html
+http://username.github.io/pages.html
+http://username.github.io/rss.xml
+http://username.github.io/sitemap.txt
+http://username.github.io/tags.html
+http://username.github.io/zcontact.html
 
-/learn/2014/12/26/.html
-/lessons/2011/12/29/jekyll-introduction.html
+http://username.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/
+http://username.github.io/lessons/jekyll-introduction
