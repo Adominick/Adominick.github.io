@@ -26,16 +26,15 @@ Usage:
   
     {% if forloop.first %}
       <h2> &raquo {{this_year}}</h2>
-
     {% endif %}
-      <ul>
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   <!-- date: "%B %e, %Y" -->
+
     {% if forloop.last %}
-      </ul>
+
     {% else %}
       {% if this_year != next_year %}
-        </ul>
+
         <h2> &raquo {{next_year}}</h2>
         
       {% endif %}

@@ -129,10 +129,12 @@ var _hmt = _hmt || [];
 
 <table>
       <tr>
-       <a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/"><h2>用 github+jekyll 搭建个人 blog</h2></a>
+       <a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/"><h2>用 github + jekyll-bootstrap 搭建个人 blog</h2></a>
        <span>2014-12-26 | 分类:<a href="/categories.html" style="color:grey">锤炼技能</a> | 标签: <a href="/tags.html" style="color:grey">博客</a>    <a href="/tags.html" style="color:grey">网络</a>  
       &raquo;</span>
       
+<p><em>文/<a href="/zcontact.html">甄谨言</a></em></p>
+
 <p>本文笔记本配置：</p>
 
 <ul>
@@ -164,20 +166,24 @@ Directly following the intro we’ll learn exactly <em>how</em> Jekyll does what
 
       </div>
       
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'adominick'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrxQFOfE',
+    conf = 'prod_c962169702ef7de610d99ab6fb28c5d5';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
       <footer>
         <p>&copy; 
           2014 from <a href="/zcontact.html" title="Bin Liu">Bin Liu</a> powered by <a href="http://jekyllbootstrap.com//" title="jekyll-bootstrap">Jekyll-bootstrap</a>
