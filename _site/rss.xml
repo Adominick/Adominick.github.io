@@ -3,10 +3,10 @@
 <channel>
         <title>首页</title>
         <description>首页 - </description>
-        <link>http://username.github.io</link>
-        <link>http://username.github.io</link>
-        <lastBuildDate>2014-12-27T20:15:37+08:00</lastBuildDate>
-        <pubDate>2014-12-27T20:15:37+08:00</pubDate>
+        <link>http://Adominick.github.io</link>
+        <link>http://Adominick.github.io</link>
+        <lastBuildDate>2014-12-27T20:32:12+08:00</lastBuildDate>
+        <pubDate>2014-12-27T20:32:12+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -147,8 +147,8 @@ rm -rf ./.git/
 
 &lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;#t&quot;&gt;返回目录&lt;/a&gt;&lt;/div&gt;
 </description>
-                <link>http://username.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/</link>
-                <guid>http://username.github.io/</guid>
+                <link>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/</link>
+                <guid>http://Adominick.github.io/</guid>
                 <pubDate>2014-12-26T00:00:00+08:00</pubDate>
         </item>
 
@@ -570,8 +570,8 @@ As noted, our main programming constraint is the fact that our API is limited to
 &lt;p&gt;Please take a look at []()
 or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;
 </description>
-                <link>http://username.github.io/lessons/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/jekyll-introduction</guid>
+                <link>http://Adominick.github.io/lessons/jekyll-introduction</link>
+                <guid>http://Adominick.github.io/lessons/jekyll-introduction</guid>
                 <pubDate>2011-12-29T00:00:00+08:00</pubDate>
         </item>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>首页</title>
- <link href="http://username.github.io/" rel="self"/>
- <link href="http://username.github.io"/>
- <updated>2014-12-27T20:15:37+08:00</updated>
- <id>http://username.github.io</id>
+ <link href="http://Adominick.github.io/" rel="self"/>
+ <link href="http://Adominick.github.io"/>
+ <updated>2014-12-27T20:32:12+08:00</updated>
+ <id>http://Adominick.github.io</id>
  <author>
    <name></name>
    <email>bliu238@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>用 github + jekyll-bootstrap 搭建个人 blog</title>
-   <link href="http://username.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/"/>
+   <link href="http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/"/>
    <updated>2014-12-26T00:00:00+08:00</updated>
-   <id>http://username.github.io/</id>
+   <id>http://Adominick.github.io/</id>
    <content type="html">
 &lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -156,9 +156,9 @@ rm -rf ./.git/
  
  <entry>
    <title>Jekyll Introduction</title>
-   <link href="http://username.github.io/lessons/jekyll-introduction"/>
+   <link href="http://Adominick.github.io/lessons/jekyll-introduction"/>
    <updated>2011-12-29T00:00:00+08:00</updated>
-   <id>http://username.github.io/lessons/jekyll-introduction</id>
+   <id>http://Adominick.github.io/lessons/jekyll-introduction</id>
    <content type="html">
 &lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it. 
 Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it &lt;!-- more --&gt;does.&lt;/p&gt;

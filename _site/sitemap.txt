@@ -1,13 +1,13 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
-http://username.github.io/zcontact.html
+http://Adominick.github.io/archive.html
+http://Adominick.github.io/atom.xml
+http://Adominick.github.io/categories.html
+http://Adominick.github.io/index.html
+http://Adominick.github.io/pages.html
+http://Adominick.github.io/rss.xml
+http://Adominick.github.io/sitemap.txt
+http://Adominick.github.io/tags.html
+http://Adominick.github.io/zcontact.html
 
-http://username.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/
-http://username.github.io/lessons/jekyll-introduction
+http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/
+http://Adominick.github.io/lessons/jekyll-introduction
