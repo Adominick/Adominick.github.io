@@ -80,19 +80,18 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  {%comment%}<!-- comments :
-    provider : changyan
-      short_name : michael75
-    livefyre :
-      site_id : 
-    intensedebate :
-      account : 
-    facebook :
-      appid : 
-      num_posts: 5
-      width: 580
-      colorscheme: light
-   -->{%endcomment%}
+#  comments :
+#    provider : changyan
+#      short_name : michael75
+#    livefyre :
+#      site_id : 
+#    intensedebate :
+#      account : 
+#    facebook :
+#      appid : 
+#      num_posts: 5
+#      width: 580
+#      colorscheme: light
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.

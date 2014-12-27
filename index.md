@@ -43,7 +43,12 @@ Here's a sample "posts list".
        <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a></li>
        <span>{{ post.date| date: "%Y-%m-%d" }} | 分类:<a href="{{ BASE_PATH }}/categories.html" style="color:grey">{{ post.category }}</a> | 标签:{% for tag in post.tags %} <a href="{{ BASE_PATH }}/tags.html" style="color:grey">{{ tag }}</a> {% if forloop.last != true %} {% endif %} {% endfor %}
       &raquo;</span>
-      {{ post.content | split : '<!-- more -->' | first }}...
+      {% if post.content contains '<!-- more -->' %}
+      {{ post.content | split : '<!-- more -->' | first }}
+      <a href="{{ BASE_PATH }}{{ post.url }}" title="Read more...">more...</a>
+      {% else %}
+      {{ post.content }}
+      {% endif %}
     </tr>
   {% endfor %}
 </table>

@@ -97,7 +97,11 @@
 
 
 
+
           </ul>
+        <form class="navbar-search pull-left" id="search-form" align="right">
+  <input type="text" id="google-search" class="search-query" placeholder="Search">
+        </form>
         </div>
       </div>
     </div>
@@ -144,18 +148,10 @@
 <p>本文目录    </p>
 
 <ol>
-  <li>
-    <h4 id="a-hreft1-why-githubjekyll-a"><a href="#t1"> Why github+jekyll ?</a></h4>
-  </li>
-  <li>
-    <h4 id="a-hreft2--github-a"><a href="#t2"> 申请 Github 账号</a></h4>
-  </li>
-  <li>
-    <h4 id="a-hreft3--jekylla"><a href="#t3"> 安装 Jekyll</a></h4>
-  </li>
-  <li>
-    <h4 id="a-hreft4--bloga"><a href="#t4"> 建立自己的 blog</a></h4>
-  </li>
+  <li><a href="#t1"> Why github+jekyll ?</a></li>
+  <li><a href="#t2"> 申请 Github 账号</a>   </li>
+  <li><a href="#t3"> 安装 Jekyll</a>    </li>
+  <li><a href="#t4"> 建立自己的 blog</a>    </li>
 </ol>
 
 <hr />
@@ -259,6 +255,27 @@ rm -rf ./.git/
 
 <div align="right"><a href="#t">返回目录</a></div>
 
+<h2 id="section">注意事项：</h2>
+
+<h3 id="section-1">站点信息配置</h3>
+
+<p>编辑<code>_config.yml</code>，<code>title</code>填上博客名字，个人信息往后填即可，不需要的注释掉。<code>production_url :</code>后的链接改成<code>http://uaername.github.io</code>;<code>comments :</code>是评论功能设置，<code>provider : disqus</code>，<code>short name</code>设置为用户名，这个需要稍后去disqus注册,如果不需要用 disqus 的功能，可以把 comments 注释掉;<code>analytics:</code>是网站运行情况分析，选google的就可以，<code>tracking_id</code>要换成在<a href="http://www.google.com/analytics">Google Analytics</a>注册后给出的。</p>
+
+<h2 id="section-2">可供参考学习的链接</h2>
+
+<ol>
+  <li><a href="http://jekyllrb.com/docs">jekyll文档</a></li>
+  <li><a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html">jekyll quick start</a></li>
+  <li><a href="http://realasking.github.io/">realasking的博客</a></li>
+  <li><a href="http://www.ituring.com.cn/article/114888">图灵社区的一篇文章</a></li>
+  <li><a href="http://blog.javachen.com/">JavaChen’s Blog</a></li>
+  <li><a href="http://theloverz.me/">theloverz’s Blog</a></li>
+  <li><a href="http://erjjones.github.io/">erjjones’s Blog</a></li>
+  <li><a href="http://www.pchou.info/">pchou’s Blog</a></li>
+  <li><a href="http://code.tutsplus.com/tutorials/building-static-sites-with-jekyll--net-22211">Building Static Sites with Jekyll</a></li>
+  <li><a href="http://yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/">雁起平沙的网络日志</a></li>
+</ol>
+
     <div class="pagination">
       <ul>
       
@@ -271,10 +288,6 @@ rm -rf ./.git/
       </ul>
     </div>
     
-
-
-
-
   </div>
   
   <div class="span4">
