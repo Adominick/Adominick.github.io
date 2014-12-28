@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mac OS 用指定程序打开文件</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">首页</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">归档文章</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">分类浏览</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">全部页面</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">标签汇总</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/zcontact.html">请联系我</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Mac OS 用指定程序打开文件 <small>化零为整</small></h1>
+</div>
+
+<div class="pagination">
+<ul>
+      
+        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/" title="用 github + jekyll-bootstrap 搭建个人 blog">&larr; 往前</a></li>
+      
+        <li><a href="/archive.html">归档</a></li>
+      
+        <li class="next"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">往后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    
+<div class="row">
+  <div class="span10">
+    
+<p><em>文/<a href="/zcontact.html" style="color:grey">甄谨言</a></em>
+Mac 下我一般都是用 bash 创建 markdown 文件，然后再用 Mou 程序编辑的，用 Mou 程序的好处在于可以实时看到编辑后的文本效果。于是就想再 bash 中直接用 Mou 打开刚刚建立的文件，查 help 文档<!-- more -->信息</p>
+
+<pre><code>open: unrecognized option '--help'
+Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-b &lt;bundle identifier&gt;] [-a &lt;application&gt;] [filenames] [--args arguments]
+Help: Open opens files from a shell.
+  By default, opens each file using the default application for that file.  
+  If the file is in the form of a URL, the file will be opened as a URL.
+Options: 
+  	-a                Opens with the specified 
+</code></pre>
+
+<p>看到其中的<code>open [-a &lt;application&gt;] [filenames] [--args arguments]</code>，及命令行说明<code>Help: Open opens files from a shell.</code>，所以如果我再 bash 中要用 Mou 打开<code>.md</code>的文件就应该在 shell 中输入</p>
+
+<blockquote>
+  <p>open -a mou filename.md</p>
+</blockquote>
+
+
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/" title="用 github + jekyll-bootstrap 搭建个人 blog">&larr; 往前</a></li>
+      
+        <li><a href="/archive.html">归档</a></li>
+      
+        <li class="next"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">往后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>发布时间</h4>
+    <div class="date"><span>28 December 2014</span></div>
+    </br>
+
+    <h4>类别目录</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/categories.html#锤炼技能-ref">
+    		锤炼技能 <span>2</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    </br>
+    
+  
+    <h4>标签</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#计算机-ref">计算机 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#shell-ref">shell <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+  
+  </br>
+  
+  <h4>扫描二维码加我哦^_^</h4>
+    <img src="/images/weixin.png" height=200px width=200px/>
+    </br>
+    
+    
+  </div>
+</div>
+
+
+
+
+      </div>
+
+
+<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrxQFOfE',
+    conf = 'prod_c962169702ef7de610d99ab6fb28c5d5';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
+      <footer>
+        <p>&copy; 
+          2014 from <a href="/zcontact.html" title="Bin Liu">Bin Liu</a> powered by <a href="http://jekyllbootstrap.com//" title="jekyll-bootstrap">Jekyll-bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

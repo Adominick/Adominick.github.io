@@ -5,17 +5,346 @@
         <description>首页 - </description>
         <link>http://Adominick.github.io</link>
         <link>http://Adominick.github.io</link>
-        <lastBuildDate>2014-12-28T14:01:57+08:00</lastBuildDate>
-        <pubDate>2014-12-28T14:01:57+08:00</pubDate>
+        <lastBuildDate>2014-12-28T21:00:31+08:00</lastBuildDate>
+        <pubDate>2014-12-28T21:00:31+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
+                <title>matlab文件读取</title>
+                <description>
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;		
+由于现在各种实验仪器都可以记录实验过程中产生的数据，而这些数据有可能具有不同的格式，当数据量很庞大的时候，我们就需要用像 Matlab、Python、Fortran 等的程序处理数据，本文将讲解 Matlab 的一些读写数据的&lt;!-- more --&gt;常用命令。&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;t&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;本文目录    &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#t1&quot;&gt; load,save&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#t2&quot;&gt; textread,textscan&lt;/a&gt;   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#t3&quot;&gt; 具体事例分析&lt;/a&gt;    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-namet1a1-loadsave&quot;&gt;&lt;a name=&quot;t1&quot;&gt;&lt;/a&gt;1. load,save&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;load&lt;/code&gt;是将文本中变量导入工作空间&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;load(&#39;gong.mat&#39;) %只导入文件到工作空间
+load gong.mat    %同时导入变量
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;whos&lt;/code&gt;可以用来查看工作空间变量大小和类型。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;save&lt;/code&gt;命令的使用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;save pqfile.txt p q -ascii
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ASCII码是我们读得懂的格式，二进制就是那种只含有“0”、“1”的存储方式。通常，文本流用来读写标准的文本文件，或者将字符输出到屏幕或打印机，或者接受键盘的输入；而二进制流用来读写二进制文件(例如图形或字处理文档)，或者读取鼠标输入，或者读写调制解调器。如果用文本方式打开二进制文件，会把“0D   0A”自动变换成“\n”来存在内存中。写入的时候反向处理。而二进制方式打开的话，就不会有这个过程。但是，Unicode/UTF/UCS格式的文件，必须用二进制方式打开和读写。&lt;/p&gt;
+
+&lt;p&gt;将这个是为了知道matlab什么时候改用什么存储方式。在 matlab 中存储成为二进制还是文本文件取决于fopen的方式，如果用wt，则存储为文本文件，这样用记事本打开就可以正常显示了；如果用w则存储为二进制文件，这样用记事本打开会出现小黑方块，要正常显示的话，可以用写字板或UltraEdit等工具打开。&lt;/p&gt;
+
+&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;#t&quot;&gt;返回目录&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;a-namet2a2-textreadtextscan&quot;&gt;&lt;a name=&quot;t2&quot;&gt;&lt;/a&gt;2. textread,textscan&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;textread&lt;/code&gt;是从文本文件读取数据，然后按照你的读取方式输出数据。这条命令对于已知数据格式文件的读取较为方便&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mydata.dat&lt;/code&gt;文件的第一行是&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Sally	  Levell 12.34 45 Yes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;则在可以用&lt;code&gt;textread&lt;/code&gt;阅读文件第一行，并忽略浮点值&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[names, types, y, answer] = textread(&#39;mydata.dat&#39;, ...
+&#39;%9c %6s %*f %2d %3s&#39;, 1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;matlab 返回的数值为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;names =
+	Sally    
+types = 
+	&#39;Level1&#39;
+y =
+	45
+answer = 
+    &#39;Yes&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用 text 编辑器创建一个名为&lt;code&gt;grades.txt&lt;/code&gt;文件，内容为：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;Student_ID  | Test1  | Test2  | Test3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;   1           91.5     89.2     77.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;   2           88.0     67.8     91.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;   3           76.3     78.1     92.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;   4           96.4     81.2     84.6&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;用4次&lt;code&gt;&#39;%s&#39;&lt;/code&gt;格式读取每列开头&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fileID = fopen(&#39;grades.txt&#39;);
+
+formatSpec = &#39;%s&#39;;
+N = 4;
+C_text = textscan(fileID,formatSpec,N,&#39;Delimiter&#39;,&#39;|&#39;); %以“|”为分隔号读取&#39;%s&#39;4次
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再读取文件里数据&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C_data0 = textscan(fileID,&#39;%d %f %f %f&#39;)
+C_data0 = 
+  [4x1 int32]    [4x1 double]    [4x1 double]    [4x1 double]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后记得一定要关闭文件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fclose(fileID);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;#t&quot;&gt;返回目录&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;a-namet3a3-&quot;&gt;&lt;a name=&quot;t3&quot;&gt;&lt;/a&gt;3. 具体事例分析&lt;/h2&gt;
+
+&lt;p&gt;以下事例源自&lt;a href=&quot;http://www.matlabsky.com/thread-10308-1-1.html&quot;&gt;http://www.matlabsky.com/thread-10308-1-1.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.纯数据（列数相同）：
+源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 3866.162 2198.938 141.140
+1 3741.139 2208.475 141.252
+2 3866.200 2198.936 141.156
+3 3678.048 2199.191 141.230
+4 3685.453 2213.726 141.261
+5 3728.769 2212.433 141.277
+6 3738.785 2214.381 141.256
+7 3728.759 2214.261 141.228
+8 3748.886 2214.299 141.243
+9 3748.935 2212.417 141.253
+10 3733.612 2226.653 141.236
+11 3733.583 2229.248 141.223
+12 3729.229 2229.118 141.186
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：对于这个txt文件，由于各行列数相同，故简单地使用load,importdata均可。&lt;/p&gt;
+
+&lt;p&gt;2.字段名（中、英文字段均可）+数据：
+源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CH0 CH1 CH2 CH3
+0.000123 0.000325 0.000378 0.000598
+0.000986 0.000256 0.000245 0.000698
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：由于是记录的形式，因此各行列数必相同（缺少部分列时请自行在文件中补上 Inf 或 NaN），故直接使用 importdata 便可。&lt;/p&gt;
+
+&lt;p&gt;3.注释（含有独立的数字串）+数据（列数相同）：
+问题：这个文件有4列,但前6行是文字说明,4列数字是从第8行开始的.现在我想把这个文件的前2列和文字说明提出来组成一个新的dat文件&lt;/p&gt;
+
+&lt;p&gt;源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Group 2  12.02.2006   Limei
+Samples of datas: 50000
+
+CH0  CH1  CH2  CH3
+0.000123  0.000325   0.000378   0.000598
+0.000986  0.000256   0.000245   0.000698
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;目标文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Group 2 12.02.2006 Limei
+Samples of datas: 50000
+
+CH0 CH1
+0.000123 0.000325
+0.000986 0.000256
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：由于注释中含有独立的数字串，且注释部分没有明显的格式，这时候用importdata, load等高级命令直接读取会失败，用 textread, dlmwrite 等格式化命令也不太合适，因此只能使用低级命令进行读取。（当然了，可以跳过注释部分直接用高级命令读取数据，即：[a b c d] = textread(filename,’%f %f %f %f’,’headerlines’,4); ）。一个简单的、非通用的包含注释的读取方法如下：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;clc;clear;
+fid = fopen(&#39;exp.txt&#39;, &#39;r&#39;);
+fid_n=fopen(&#39;ex.dat&#39;,&#39;w&#39;);
+while ~feof(fid)
+    tline=fgetl(fid);
+    if ~isempty(tline)
+        if double(tline(1))&amp;gt;=48 &amp;amp;&amp;amp; double(tline(1))&amp;lt;=57  %数值开始
+            a=strread(tline);
+            a(3:4)=[];
+            fprintf(fid_n,&#39;%f %f\n&#39;,a);
+            clear a;
+        elseif double(tline(1))==67   %字母C开始
+           [b1,b2,b3,b4]=strread(tline,&#39;%s %s %s %s&#39;);
+           b=[b1{1},&#39;  &#39;,b2{1}];
+            fprintf(fid_n,&#39;%s\n&#39;,b);
+            clear b b1 b2 b3 b4;
+        else
+            fprintf(fid_n,&#39;%s\n&#39;,tline);
+        end
+    else
+        fprintf(fid_n,&#39;%s\n&#39;,tline);
+    end
+end
+fclose(fid);
+fclose(fid_n);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4.注释（不含独立的数字串）+数据（列数相同）：
+源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;你好 abc
+欢迎来到 我们
+vib.hit.edu.cn
+1 11 111 1111
+2 22 222 2222
+3 33 333 3333
+4 44 444 4444
+5 55 555 5555
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：直接用 importdata 便可&lt;/p&gt;
+
+&lt;p&gt;注：有时候注释中含有独立的数字串也可以 importdata 成功，不过得到的结果有可能不正确，建议这时候使用第3种情形的读取方式。&lt;/p&gt;
+
+&lt;p&gt;5.注释与数据混排：
+对此当然只能自己编程，举例：&lt;/p&gt;
+
+&lt;p&gt;源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 11 111 1111
+你好
+2 22 222 2222
+欢迎来到
+3 33 333 3333
+4 44 444 4444
+vib.hit.edu.cn
+5 55 555 5555
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function [data]=distilldata(infile)
+%功能说明：
+%将保存数据的原始文件中的数值数据读入到一个data变量中
+%使用说明：
+% infile——原始数据文件名;
+% data=数据变量
+
+tmpfile=&#39;tmp2.mat&#39;;
+
+fidin=fopen(infile,&#39;r&#39;); % 打开原始数据文件（.list）
+
+fidtmp=fopen(tmpfile,&#39;w&#39;); % 创建保存数据文件（不含说明文字）
+
+while ~feof(fidin) % 判断是否为文件末尾
+  tline=fgetl(fidin); % 从文件读入一行文本（不含回车键）
+  if ~isempty(tline) % 判断是否空行
+    [m,n]=size(tline);
+    flag=1;
+    for i=1:n %判断一行中有没有字符（＋－.Ee和空格键除外）
+      if ~(tline(i)==&#39; &#39;|tline(i)==&#39;-&#39;|tline(i)==&#39;.&#39;|tline(i)==&#39;E&#39;...
+          |tline(i)==&#39;e&#39;|tline(i)==&#39;+&#39;...
+          |(double(tline(i))&amp;gt;=48&amp;amp;&amp;amp;double(tline(i))&amp;lt;=57))
+        flag=0;
+        break;
+      end
+    end
+    if flag==1 % 如果是数字行，把此行数据写入文件
+      fprintf(fidtmp,&#39;%s\n&#39;,tline);
+    end
+  end
+end
+
+fclose(fidin);
+
+fclose(fidtmp);
+
+data=textread(tmpfile);
+
+delete(tmpfile);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;另外，如果要求不高，也可以使用 textread 函数跳过注释部分进行读取，不过前提是需要事先知道文件内容的结构（即哪行是数据、哪行是注释）&lt;/p&gt;
+
+&lt;p&gt;6.各列数据的分离：
+源文件：&lt;/p&gt;
+
+&lt;p&gt;CODE:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;           0 +  47038.7   1.05  09:26:07  C
+           2 +  46477.7   1.03  09:28:38  C  
+           4 +  44865.7   1.04  09:28:48  C  
+           6 +  41786.4   1.03  09:28:56  C  
+           8 +  39896.0   0.97  09:29:03  C  
+          10 +  37518.4   0.93  09:29:15  C  
+          12 +  35858.5   0.92  09:29:30  C  
+          14 +  46105.0   1.03  09:30:21  C  
+          16 +  46168.6   6.89  09:30:30  C  
+          18 +  48672.3   4.33  09:30:40  C  
+          20 +  49565.7   0.49  09:30:48  C  
+          22 +  49580.7   0.53  09:30:55  C  
+          24 +  49602.3   0.84  09:31:03  C  
+          26 +  49582.5   1.51  09:31:11  C  
+          28 +  49577.0   1.39  09:31:19  C  
+          30 +  49589.3   0.61  09:31:27  C  
+          32 +  49578.3   1.06  09:31:29  C  
+          34 +  49512.5   1.77  09:31:38  C 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解答：直接用 [a,b,c,d,e,f]=textread(yourfilename,’%d %c %f %f %s %c’); 便可&lt;/p&gt;
+
+&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;#t&quot;&gt;返回目录&lt;/a&gt;&lt;/div&gt;
+</description>
+                <link>http://Adominick.github.io/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab</link>
+                <guid>http://Adominick.github.io/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab</guid>
+                <pubDate>2014-12-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Mac OS 用指定程序打开文件</title>
+                <description>
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;
+Mac 下我一般都是用 bash 创建 markdown 文件，然后再用 Mou 程序编辑的，用 Mou 程序的好处在于可以实时看到编辑后的文本效果。于是就想再 bash 中直接用 Mou 打开刚刚建立的文件，查 help 文档&lt;!-- more --&gt;信息&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;open: unrecognized option &#39;--help&#39;
+Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-b &amp;lt;bundle identifier&amp;gt;] [-a &amp;lt;application&amp;gt;] [filenames] [--args arguments]
+Help: Open opens files from a shell.
+  By default, opens each file using the default application for that file.  
+  If the file is in the form of a URL, the file will be opened as a URL.
+Options: 
+  	-a                Opens with the specified 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;看到其中的&lt;code&gt;open [-a &amp;lt;application&amp;gt;] [filenames] [--args arguments]&lt;/code&gt;，及命令行说明&lt;code&gt;Help: Open opens files from a shell.&lt;/code&gt;，所以如果我再 bash 中要用 Mou 打开&lt;code&gt;.md&lt;/code&gt;的文件就应该在 shell 中输入&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;open -a mou filename.md&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+                <link>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/mac-os-</link>
+                <guid>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/mac-os-</guid>
+                <pubDate>2014-12-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
                 <title>用 github + jekyll-bootstrap 搭建个人 blog</title>
                 <description>
-&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;本文笔记本配置：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;
+本文笔记本配置：&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;系统：OS X Yosemite version 10.10.1&lt;/li&gt;
@@ -165,7 +494,9 @@ rm -rf ./.git/
   &lt;li&gt;&lt;a href=&quot;http://yanjunyi.com/&quot;&gt;MythArcher Yan&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://truongtx.me/&quot;&gt;Truongtx’s Blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://liberize.me/&quot;&gt;liberize’s blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://loftor.com/&quot;&gt;loftor’s blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
                 <link>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/</link>
                 <guid>http://Adominick.github.io/</guid>

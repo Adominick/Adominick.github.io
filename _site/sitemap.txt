@@ -9,5 +9,7 @@ http://Adominick.github.io/sitemap.txt
 http://Adominick.github.io/tags.html
 http://Adominick.github.io/zcontact.html
 
+http://Adominick.github.io/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab
+http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/mac-os-
 http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/
 http://Adominick.github.io/lessons/jekyll-introduction
