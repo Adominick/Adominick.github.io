@@ -4,7 +4,7 @@
  <title>首页</title>
  <link href="http://Adominick.github.io/" rel="self"/>
  <link href="http://Adominick.github.io"/>
- <updated>2014-12-27T22:31:04+08:00</updated>
+ <updated>2014-12-28T14:01:57+08:00</updated>
  <id>http://Adominick.github.io</id>
  <author>
    <name></name>
@@ -163,6 +163,13 @@ rm -rf ./.git/
   &lt;li&gt;&lt;a href=&quot;http://www.pchou.info/&quot;&gt;pchou’s Blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://code.tutsplus.com/tutorials/building-static-sites-with-jekyll--net-22211&quot;&gt;Building Static Sites with Jekyll&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/&quot;&gt;雁起平沙的网络日志&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.yangzhiping.com/&quot;&gt;阳志平的博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.skydark.info/&quot;&gt;skydark’s Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.liulantao.com/&quot;&gt;刘兰涛的技术博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://havee.me/&quot;&gt;Havee’s Space&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yanjunyi.com/&quot;&gt;MythArcher Yan&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://truongtx.me/&quot;&gt;Truongtx’s Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liberize.me/&quot;&gt;liberize’s blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
  </entry>
