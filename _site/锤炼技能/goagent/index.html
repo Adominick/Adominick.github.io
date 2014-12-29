@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mac下GoAgent安装教程</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">首页</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">归档文章</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">分类浏览</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">全部页面</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">标签汇总</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/zcontact.html">请联系我</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Mac下GoAgent安装教程 <small>化零为整</small></h1>
+</div>
+
+<div class="pagination">
+<ul>
+      
+        <li class="prev"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">&larr; 往前</a></li>
+      
+        <li><a href="/archive.html">归档</a></li>
+      
+        <li class="next"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience" title="开放科学工具箱模版库">往后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    
+<div class="row">
+  <div class="span10">
+    
+<p><em>文/<a href="/zcontact.html" style="color:grey">甄谨言</a></em>
+如果您之前安装过 GoAgent，而突然间又无法使用了，先从以下方法解决问题：</p>
+
+<ol>
+  <li>确保下载的是最新版<a href="https://github.com/goagent/goagent">GoAgent</a>上传到GAE。</li>
+  <li>下载<a href="http://pan.baidu.com/s/1eQlGh4Q">iplist.txt</a>文件，替换 PC 端 GoAgent/local文件夹中<!-- more -->配置文件proxy.ini对应的<code>[iplist]</code>内容</li>
+  <li>关闭proxy.ini，重启GoAgent</li>
+</ol>
+
+<p>如果您遇到如下问题：</p>
+
+<blockquote>
+  <p>GoAgent Starting…WARNING - [Mar 22 20:05:54] Load Crypto.Cipher.ARC4 Failed, Use Pure Python Instead.</p>
+</blockquote>
+
+<p>则可以在终端输入</p>
+
+<p><code>
+sudo easy_install pycrypto
+</code></p>
+
+<p>如果返回信息为</p>
+
+<blockquote>
+  <p>Address already used</p>
+</blockquote>
+
+<p>则可以在终端输入</p>
+
+<pre><code>top
+
+PID   COMMAND      %CPU TIME     #TH  #WQ  #PORT MEM    PURG   CMPRS  PGRP PPID
+5691  top          2.3  00:00.42 1/1  0    19    2376K  0B     0B     5691 5627
+5627  bash         0.0  00:00.09 1    0    15    2404K  0B     0B     5627 5626
+5626  login        0.0  00:00.01 2    0    26    1148K  0B     0B     5626 675
+5623  GoAgentMac   0.0  00:00.28 3    0    150   8052K  8192B  0B     5623 1
+5621  quicklookd   0.0  00:00.13 4    0    80    3888K  0B     0B     5621 1
+5404  Google Chrom 0.1  00:04.31 12   0    124   27M    12K    0B     5387 5387
+5402  Google Chrom 0.0  00:00.48 12   0    122   15M    0B     0B     5387 5387
+5401  Google Chrom 0.0  00:00.91 12   0    124   25M    0B     0B     5387 5387
+5400  Google Chrom 0.0  00:00.57 12   0    122   19M    0B     0B     5387 5387
+5399  Google Chrom 0.0  00:01.82 11   0    121   39M    4096B  0B     5387 5387
+5398  Google Chrom 0.0  00:00.80 12   0    123   23M    4096B  0B     5387 5387
+5397  Google Chrom 0.0  00:01.29 12   0    123   33M    8192B  0B     5387 5387
+5396  Google Chrom 0.0  00:00.49 11   0    121   15M    0B     0B     5387 5387
+5394  Google Chrom 1.3  00:06.72 12   0    122   22M+   0B     0B     5387 5387
+5391  Google Chrom 0.0  00:07.47 4    0    74    26M    0B     0B     5387 5387
+5387  Google Chrom 2.8  00:39.27 40   0    508   86M    1140K  0B     5387 1
+5372  com.apple.hi 0.0  00:00.01 2    0    29    916K   0B     0B     5372 1
+5370  CVMCompiler  0.0  00:00.62 2    1    31    19M    20K    0B     5370 1
+5368  TextEdit     0.0  00:07.84 3    0    229   12M    8192B  0B     5368 1
+5312  mdworker     0.0  00:00.03 3    0    41    1412K  0B     4096B  5312 1
+5297  Python       0.0  00:06.23 12   0    36    18M    0B     12K    5297 5293
+5293  bash         0.0  00:00.02 1    0    15    648K   0B     0B     5293 5292
+5292  sudo         0.0  00:00.03 2    0    27    1088K  0B     12K    5292 1
+5281  systemstats  0.0  00:01.30 2    1    34    6300K  0B     4096B  5281 1
+5254  CoreServices 0.0  00:00.46 3    0    180   7472K  0B     1432K  5254 1
+4221  ocspd        0.0  00:00.96 4    0    69    2268K  0B     912K   4221 1
+4025  CloudKeychai 0.0  00:00.03 2    0    43    700K   0B     180K   4025 1
+4021  DataDetector 0.0  00:00.04 2    0    48    440K   0B     924K   4021 1
+4017  recentsd     0.0  00:00.33 2    0    98    1948K  0B     3992K  4017 1
+3831  ScopedBookma 0.0  00:00.10 3    2    34    1168K  0B     340K   3831 1
+3817  suhelperd    0.0  00:00.03 2    0    34    16K    0B     1588K  3817 1
+
+sudo kill 5297 # PID 5297 python process
+</code></pre>
+
+
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">&larr; 往前</a></li>
+      
+        <li><a href="/archive.html">归档</a></li>
+      
+        <li class="next"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience" title="开放科学工具箱模版库">往后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>发布时间</h4>
+    <div class="date"><span>29 December 2014</span></div>
+    </br>
+
+    <h4>类别目录</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/categories.html#锤炼技能-ref">
+    		锤炼技能 <span>4</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    </br>
+    
+  
+    <h4>标签</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#goagent-ref">goagent <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#翻墙-ref">翻墙 <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+  
+  </br>
+  
+  <h4>扫描二维码加我哦^_^</h4>
+    <img src="/images/weixin.png" height=200px width=200px/>
+    </br>
+    
+    
+  </div>
+</div>
+
+
+
+
+      </div>
+
+
+<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrxQFOfE',
+    conf = 'prod_c962169702ef7de610d99ab6fb28c5d5';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
+      <footer>
+        <p>&copy; 
+          2014 from <a href="/zcontact.html" title="Bin Liu">Bin Liu</a> powered by <a href="http://jekyllbootstrap.com//" title="jekyll-bootstrap">Jekyll-bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

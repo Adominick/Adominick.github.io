@@ -70,6 +70,14 @@ task :post do
     post.puts "tags: #{tags}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
+    post.puts "_文/<a href="{{site.url}}/zcontact.html" style="color:grey">甄谨言</a>_"
+    post.puts "<a name="t"></a>"
+    post.puts "---"
+    post.puts "本文目录"
+    post.puts "1.  [](#t1)"
+    post.puts "2.  [](#t2)"
+    post.puts "3.  [](#t3)"
+    post.puts "---"
   end
 end # task :post
 

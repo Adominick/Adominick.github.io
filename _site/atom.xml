@@ -4,13 +4,202 @@
  <title>首页</title>
  <link href="http://Adominick.github.io/" rel="self"/>
  <link href="http://Adominick.github.io"/>
- <updated>2014-12-28T21:12:56+08:00</updated>
+ <updated>2014-12-30T00:39:16+08:00</updated>
  <id>http://Adominick.github.io</id>
  <author>
    <name></name>
    <email>bliu238@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>开放科学工具箱模版库</title>
+   <link href="http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience"/>
+   <updated>2014-12-29T00:00:00+08:00</updated>
+   <id>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience</id>
+   <content type="html">
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;http://www.yangzhiping.com&quot; style=&quot;color:grey&quot;&gt;阳志平&lt;/a&gt;&lt;/em&gt;	
+这篇文章总结了针对大多数科学网上已有的一些开放资源，这是不受你所在学校 IP 限制的一些网页，以及如何配合各种软件来整理这些资源，思路很清晰，值得借鉴。只是里面有些链接，对于具体专业领域可能不是那么使用，所以读者在阅读的时候最好能&lt;!-- more --&gt;有所取舍。以下摘自&lt;a href=&quot;http://www.yangzhiping.com&quot;&gt;阳志平的博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;模版使用说明&lt;/h2&gt;
+
+&lt;p&gt;一些值得重视的整理规则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;不用试图穷尽以下所有问题，而只是整理自己有心得的问题以及学科特殊问题；&lt;/li&gt;
+  &lt;li&gt;选择少比选择多好，不要尝试给出学科最多的选择，而是只推荐最佳实践；&lt;/li&gt;
+  &lt;li&gt;如果学科牛人、牛刊太多了，那么top10是个较好的限制；&lt;/li&gt;
+  &lt;li&gt;科学自身的进化会快于一切，所有模版库的问题仅仅是个参考，你可以更好地发挥；&lt;/li&gt;
+  &lt;li&gt;如果可能，尽可能选择细分学科，比如自然语言处理就比计算机科学更值得整理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q1&quot;&gt;Q1：理解科学&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;假设穿越回到初中，作为完全外行，那时我是如何理解现在自己所在的这门科学？&lt;/li&gt;
+  &lt;li&gt;如果我要利用穿越者优势，我会研究哪些学科问题？会如何研究？&lt;/li&gt;
+  &lt;li&gt;这门科学吸引自己的初衷是什么？它真正要解决的大问题是什么？&lt;/li&gt;
+  &lt;li&gt;我现在在离哪些初衷越来越远？做的事情是不是与大问题相关？或者有助于人类作为族群整体进化？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q2&quot;&gt;Q2：开放科学是什么&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我所在学科，哪些做法阻碍了学科自身的发展？&lt;/li&gt;
+  &lt;li&gt;我所在学科，&lt;a href=&quot;http://www.plos.org/wp-content/uploads/2011/05/Signers-List-111610.pdf&quot;&gt;哪些人&lt;/a&gt;或者哪些&lt;a href=&quot;http://www.open-access.net.cn/5f00653e83b753d6653f7b56/79d178147ba174064e0e8d4452a9673a67845f00653e83b753d6653f7b56/82f156fd/82f156fd60e05eb757fa91d14f1a-wellcome-trust-5f00653e83b753d6653f7b56&quot;&gt;基金&lt;/a&gt;在支持开放科学？&lt;/li&gt;
+  &lt;li&gt;从自己学科角度写&lt;a href=&quot;http://en.wikipedia.org/wiki/Reinventing_Discovery:_The_New_Era_of_Networked_Science&quot;&gt;Reinventing_Discovery&lt;/a&gt;这本书读后感，并介绍给课题组&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q3-&quot;&gt;Q3: 如何获取高质量文献&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.doaj.org/&quot;&gt;DOAJ网站&lt;/a&gt;收集了所有学科的开放获取期刊，我的学科列表有哪些？哪些是高引用与发展潜力的？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://plos.org&quot;&gt;PLoS&lt;/a&gt;与&lt;a href=&quot;http://arxiv.org/&quot;&gt;arXiv&lt;/a&gt;等开放获取先锋论文库中，我所在学科，哪些属于高引用刊物或者牛人云集的刊物？&lt;/li&gt;
+  &lt;li&gt;我所在学科，高质量的论文文献库是哪些？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://videolectures.net/&quot;&gt;videolectures&lt;/a&gt;中，有哪些我所在学科的精彩演讲，尤其是诺奖级别的？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.conferencealerts.com/&quot;&gt;conferencealerts&lt;/a&gt;：我所在学科哪些学术会议属于世界级别，值得订阅？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://slideshare.net/&quot;&gt;SlideShare&lt;/a&gt;：我所在学科，有哪些好的共享ppt作者？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fundingopps.cos.com/about/fundingopps.shtml&quot;&gt;COS&lt;/a&gt;：我所在学科，近些年基金申请反映出什么规律或者趋势？同时，有哪些基金对开放获取、开放科学的支持力度更大？&lt;/li&gt;
+  &lt;li&gt;如何使用&lt;a href=&quot;http://scholar.google.com/&quot;&gt;Google Scholar&lt;/a&gt;
+与&lt;a href=&quot;http://academic.research.microsoft.com/&quot;&gt;MAS&lt;/a&gt;导出、管理参考文献？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q4-&quot;&gt;Q4: 如何高效管理文献&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我所在学科，存在哪些文献管理独特技巧或者文献二次评价秘诀&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mendeley.com&quot;&gt;mendeley&lt;/a&gt;、&lt;a href=&quot;http://www.citeulike.org/&quot;&gt;citeulike&lt;/a&gt;或者&lt;a href=&quot;http://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt;，哪个更适合自己学科使用？&lt;/li&gt;
+  &lt;li&gt;在&lt;a href=&quot;http://mendeley.com&quot;&gt;mendeley&lt;/a&gt;上，我所在学科，有哪些值得关注的小组？或者，我所在学科，有哪些世界级的文献阅读分享小组网站？国内豆瓣上，有哪些值得关注的学科兴趣小组？其中，读书很勤奋、很用功的豆瓣达人各自是哪些？&lt;/li&gt;
+  &lt;li&gt;如何使用&lt;a href=&quot;http://www.endnote.com/&quot;&gt;EndNote&lt;/a&gt; 的&lt;strong&gt;Export Traveling Library&lt;/strong&gt;或者其他文献管理工具类似功能，从参考文献下载、参考文献阅读笔记、最终论文写作的所有历程都记录下来，最终共享给课题组或者整个互联网？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q5-&quot;&gt;Q5: 如何评价文献质量&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我所在学科的权威奖项，尤其是奖励科学生涯早期的年轻科学家奖项是什么？他们的高引用论文阅读了吗？&lt;/li&gt;
+  &lt;li&gt;未来二十年，这些年轻科学家里面，谁最有潜力？他们的论文、工作反映出来的学科本质创新规律是什么？我如何以5年前、5年后，对他们的工作的二次评估来调整自己的兴趣方向或者改善自己对学科创新本质规律的认识？&lt;/li&gt;
+  &lt;li&gt;哪些杰出青年科学家最容易获得本学科的终身成就奖？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sciencewatch.com/&quot;&gt;sciencewatch&lt;/a&gt;网站的&lt;a href=&quot;http://sciencewatch.com/ana/st/about/&quot;&gt;Special Topics栏目&lt;/a&gt;与&lt;a href=&quot;http://sciencewatch.com/dr/nhp/&quot;&gt;Hot Papers&lt;/a&gt;栏目、&lt;a href=&quot;http://sciencewatch.com/dr/fbp/&quot;&gt;Fast Breaking Papers&lt;/a&gt;，反映学科近些年的热门或者突破进展论文，哪些是靠谱的，哪些是值得自己学习的？&lt;/li&gt;
+  &lt;li&gt;本研究领域的平均引用率是多少，哪些科学家可以称之为合格，哪些可以称之为优秀？哪些可以称之为卓越（top）科学家？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cs.ucla.edu/~palsberg/h-number.html&quot;&gt;top科学家的H指数&lt;/a&gt;都是多少？他们的高引用论文前三名都是什么？反映了学科什么样的本质规律？&lt;/li&gt;
+  &lt;li&gt;自身学科有哪些特殊的文献质量评价方法？它们的研究方法、研究对象、年份都有何规律？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q6-&quot;&gt;Q6: 如何获取并共享高质量数据&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本学科有哪些靠谱的数据共享计划？我该如何参与？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zooniverse.org/&quot;&gt;zooniverse&lt;/a&gt;公民科学计划，我如何在自己所在学科发起？&lt;/li&gt;
+  &lt;li&gt;我所在学科，有哪些稳定更新的第三方开放数据源？&lt;/li&gt;
+  &lt;li&gt;设计众包或者在线实验、数据采集，我所在学科已经出版了哪些好书，有何伦理、技术注意事项？以及最佳实践或者开源工具？&lt;/li&gt;
+  &lt;li&gt;如何在自己实验室或者所在机构推广&lt;a href=&quot;https://github.com/twitter/innovators-patent-agreement&quot;&gt;创新者专利协议&lt;/a&gt;？&lt;/li&gt;
+  &lt;li&gt;如何以&lt;a href=&quot;http://opendatacommons.org/&quot;&gt;开放数据协议&lt;/a&gt;将自己的数据面向全世界研究者发布？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://creativecommons.net.cn/&quot;&gt;知识共享协议&lt;/a&gt;如何使用？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q7-&quot;&gt;Q7: 如何输出开放科学成果&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;APA格式或者哪种格式，应作为所在学科重点推广？&lt;/li&gt;
+  &lt;li&gt;相应文献管理软件如何使用？&lt;/li&gt;
+  &lt;li&gt;我所在学科，有哪些论文美文？值得作为提升写作品味，反复阅读？&lt;/li&gt;
+  &lt;li&gt;如何摆脱word的束缚，开始尝试性到真正习惯使用LaTex或者Markdown等格式？&lt;/li&gt;
+  &lt;li&gt;LaTex或者Markdown等格式，如何与文献管理软件搭配？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt;上有哪些我所在学科的开源软件？&lt;/li&gt;
+  &lt;li&gt;我所在学科，有哪些著名开源软件？我该如何参与？&lt;/li&gt;
+  &lt;li&gt;开源硬件对自己的项目有什么启发？&lt;/li&gt;
+  &lt;li&gt;如何在自己家乡、机构所在社区、周边学校开展公民科学活动或者做一些讲座？&lt;/li&gt;
+  &lt;li&gt;类似于&lt;a href=&quot;http://maotouying.net/&quot;&gt;猫头鹰实验室&lt;/a&gt;这样的活动，我可以搞起来吗？&lt;/li&gt;
+  &lt;li&gt;有哪些基金特别支持类似开放科学的ngo活动？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;q8&quot;&gt;Q8：如何以开放学习的方式学习科学&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;学科哪些牛人在&lt;a href=&quot;http://www.ted.com/&quot;&gt;TED&lt;/a&gt;上做过演讲？哪些跨学科的演讲对自己有启发？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://itunes.stanford.edu/&quot;&gt;斯坦福开放大学&lt;/a&gt;、&lt;a href=&quot;http://ocw.mit.edu/courses/&quot;&gt;MIT开放课程&lt;/a&gt;、&lt;a href=&quot;http://videolectures.net/&quot;&gt;videolectures&lt;/a&gt;、&lt;a href=&quot;https://www.coursera.org/&quot;&gt;coursera&lt;/a&gt;与 &lt;a href=&quot;http://www.youtube.com/&quot;&gt;YouTube&lt;/a&gt;: 与自己所在学科最相关的学习教程是哪些？&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackexchange.com/sites&quot;&gt;stackexchange&lt;/a&gt;：自己如何积分与投入关注？哪些是高质量问题？&lt;/li&gt;
+  &lt;li&gt;如何通过&lt;a href=&quot;http://openstudy.com&quot;&gt;openstduy&lt;/a&gt;学习？&lt;/li&gt;
+  &lt;li&gt;学科已经公开的一些能够提升大众思维水准的科学传播项目有哪些？&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mac下GoAgent安装教程</title>
+   <link href="http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/goagent"/>
+   <updated>2014-12-29T00:00:00+08:00</updated>
+   <id>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/goagent</id>
+   <content type="html">
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;
+如果您之前安装过 GoAgent，而突然间又无法使用了，先从以下方法解决问题：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确保下载的是最新版&lt;a href=&quot;https://github.com/goagent/goagent&quot;&gt;GoAgent&lt;/a&gt;上传到GAE。&lt;/li&gt;
+  &lt;li&gt;下载&lt;a href=&quot;http://pan.baidu.com/s/1eQlGh4Q&quot;&gt;iplist.txt&lt;/a&gt;文件，替换 PC 端 GoAgent/local文件夹中&lt;!-- more --&gt;配置文件proxy.ini对应的&lt;code&gt;[iplist]&lt;/code&gt;内容&lt;/li&gt;
+  &lt;li&gt;关闭proxy.ini，重启GoAgent&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果您遇到如下问题：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GoAgent Starting…WARNING - [Mar 22 20:05:54] Load Crypto.Cipher.ARC4 Failed, Use Pure Python Instead.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;则可以在终端输入&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+sudo easy_install pycrypto
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;如果返回信息为&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Address already used&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;则可以在终端输入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;top
+
+PID   COMMAND      %CPU TIME     #TH  #WQ  #PORT MEM    PURG   CMPRS  PGRP PPID
+5691  top          2.3  00:00.42 1/1  0    19    2376K  0B     0B     5691 5627
+5627  bash         0.0  00:00.09 1    0    15    2404K  0B     0B     5627 5626
+5626  login        0.0  00:00.01 2    0    26    1148K  0B     0B     5626 675
+5623  GoAgentMac   0.0  00:00.28 3    0    150   8052K  8192B  0B     5623 1
+5621  quicklookd   0.0  00:00.13 4    0    80    3888K  0B     0B     5621 1
+5404  Google Chrom 0.1  00:04.31 12   0    124   27M    12K    0B     5387 5387
+5402  Google Chrom 0.0  00:00.48 12   0    122   15M    0B     0B     5387 5387
+5401  Google Chrom 0.0  00:00.91 12   0    124   25M    0B     0B     5387 5387
+5400  Google Chrom 0.0  00:00.57 12   0    122   19M    0B     0B     5387 5387
+5399  Google Chrom 0.0  00:01.82 11   0    121   39M    4096B  0B     5387 5387
+5398  Google Chrom 0.0  00:00.80 12   0    123   23M    4096B  0B     5387 5387
+5397  Google Chrom 0.0  00:01.29 12   0    123   33M    8192B  0B     5387 5387
+5396  Google Chrom 0.0  00:00.49 11   0    121   15M    0B     0B     5387 5387
+5394  Google Chrom 1.3  00:06.72 12   0    122   22M+   0B     0B     5387 5387
+5391  Google Chrom 0.0  00:07.47 4    0    74    26M    0B     0B     5387 5387
+5387  Google Chrom 2.8  00:39.27 40   0    508   86M    1140K  0B     5387 1
+5372  com.apple.hi 0.0  00:00.01 2    0    29    916K   0B     0B     5372 1
+5370  CVMCompiler  0.0  00:00.62 2    1    31    19M    20K    0B     5370 1
+5368  TextEdit     0.0  00:07.84 3    0    229   12M    8192B  0B     5368 1
+5312  mdworker     0.0  00:00.03 3    0    41    1412K  0B     4096B  5312 1
+5297  Python       0.0  00:06.23 12   0    36    18M    0B     12K    5297 5293
+5293  bash         0.0  00:00.02 1    0    15    648K   0B     0B     5293 5292
+5292  sudo         0.0  00:00.03 2    0    27    1088K  0B     12K    5292 1
+5281  systemstats  0.0  00:01.30 2    1    34    6300K  0B     4096B  5281 1
+5254  CoreServices 0.0  00:00.46 3    0    180   7472K  0B     1432K  5254 1
+4221  ocspd        0.0  00:00.96 4    0    69    2268K  0B     912K   4221 1
+4025  CloudKeychai 0.0  00:00.03 2    0    43    700K   0B     180K   4025 1
+4021  DataDetector 0.0  00:00.04 2    0    48    440K   0B     924K   4021 1
+4017  recentsd     0.0  00:00.33 2    0    98    1948K  0B     3992K  4017 1
+3831  ScopedBookma 0.0  00:00.10 3    2    34    1168K  0B     340K   3831 1
+3817  suhelperd    0.0  00:00.03 2    0    34    16K    0B     1588K  3817 1
+
+sudo kill 5297 # PID 5297 python process
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>matlab文件读取</title>
@@ -27,7 +216,7 @@
 &lt;p&gt;本文目录    &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#t1&quot;&gt; load,save&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#t1&quot;&gt;load,save&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#t2&quot;&gt; textread,textscan&lt;/a&gt;   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#t3&quot;&gt; 具体事例分析&lt;/a&gt;    &lt;/li&gt;
 &lt;/ol&gt;
