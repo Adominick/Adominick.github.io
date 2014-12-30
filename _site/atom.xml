@@ -4,13 +4,55 @@
  <title>首页</title>
  <link href="http://Adominick.github.io/" rel="self"/>
  <link href="http://Adominick.github.io"/>
- <updated>2014-12-30T00:52:44+08:00</updated>
+ <updated>2014-12-30T17:11:45+08:00</updated>
  <id>http://Adominick.github.io</id>
  <author>
    <name></name>
    <email>bliu238@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>最简单方法翻墙修改hosts</title>
+   <link href="http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/host"/>
+   <updated>2014-12-30T00:00:00+08:00</updated>
+   <id>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/host</id>
+   <content type="html">
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;此文用来记录免费翻墙中最简单的方法之一，修改 hosts。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;什么是 hosts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;hosts文件是一个储存计算机&lt;!-- more --&gt;网络中各节点信息的计算机文件（文本文件）。它件负责将主机名映射到相应的IP地址。hosts文件通常用于补充或取代网络中DNS的功能。和DNS不同的是，计算机的用户可以直接对hosts文件进行控制。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows 用户&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;请先退出所有杀毒软件&lt;/li&gt;
+  &lt;li&gt;Windows XP 以上请使用管理员身份运行或赋予hosts文件可写权限&lt;/li&gt;
+  &lt;li&gt;使用及更新: &lt;a href=&quot;http://freedom.txthinking.com/fuckGFW-64.exe&quot;&gt;fuckGFW-64.exe&lt;/a&gt;(64位) / &lt;a href=&quot;http://freedom.txthinking.com/fuckGFW-32.exe&quot;&gt;fuckGFW-32.exe&lt;/a&gt;(32位)双击运行&lt;/li&gt;
+  &lt;li&gt;首次更新时会向hosts文件写入一行&lt;code&gt;#TX-HOSTS&lt;/code&gt;, 后续更新会以此行做判断, 请不要删除它&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;*nix/OSX 用户&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;使用及更新: 打开终端运行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl -s http://freedom.txthinking.com/fuckGFW.py | sudo python
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;必读技巧&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;请使用国际版google. 防止google本地化重定向: 访问一下&lt;a href=&quot;https://www.google.com/ncr&quot;&gt;https://www.google.com/ncr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;请使用&lt;code&gt;https&lt;/code&gt;替代&lt;code&gt;http&lt;/code&gt;访问.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/txthinking/google-hosts&quot;&gt;有用的链接&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>开放科学工具箱模版库</title>
@@ -152,7 +194,7 @@
 sudo easy_install pycrypto
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;如果返回信息为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;如果返回信息为&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Address already used&lt;/p&gt;

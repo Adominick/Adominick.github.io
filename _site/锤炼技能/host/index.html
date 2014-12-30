@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mac OS 用指定程序打开文件</title>
+    <title>最简单方法翻墙修改hosts</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -108,17 +108,17 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Mac OS 用指定程序打开文件 <small>化零为整</small></h1>
+  <h1>最简单方法翻墙修改hosts <small>化零为整</small></h1>
 </div>
 
 <div class="pagination">
 <ul>
       
-        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/" title="用 github + jekyll-bootstrap 搭建个人 blog">&larr; 往前</a></li>
+        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience" title="开放科学工具箱模版库">&larr; 往前</a></li>
       
         <li><a href="/archive.html">归档</a></li>
       
-        <li class="next"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">往后 &rarr;</a></li>
+        <li class="next disabled"><a>往后 &rarr;</a>
       
       </ul>
     </div>
@@ -126,33 +126,48 @@
 <div class="row">
   <div class="span10">
     
-<p><em>文/<a href="/zcontact.html" style="color:grey">甄谨言</a></em>
-Mac 下我一般都是用 bash 创建 markdown 文件，然后再用 Mou 程序编辑的，用 Mou 程序的好处在于可以实时看到编辑后的文本效果。于是就想再 bash 中直接用 Mou 打开刚刚建立的文件，查 help 文档<!-- more -->信息</p>
+<p><em>文/<a href="/zcontact.html" style="color:grey">甄谨言</a></em></p>
 
-<pre><code>open: unrecognized option '--help'
-Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-b &lt;bundle identifier&gt;] [-a &lt;application&gt;] [filenames] [--args arguments]
-Help: Open opens files from a shell.
-  By default, opens each file using the default application for that file.  
-  If the file is in the form of a URL, the file will be opened as a URL.
-Options: 
-  	-a                Opens with the specified 
+<p>此文用来记录免费翻墙中最简单的方法之一，修改 hosts。</p>
+
+<p><strong>什么是 hosts</strong></p>
+
+<p>hosts文件是一个储存计算机<!-- more -->网络中各节点信息的计算机文件（文本文件）。它件负责将主机名映射到相应的IP地址。hosts文件通常用于补充或取代网络中DNS的功能。和DNS不同的是，计算机的用户可以直接对hosts文件进行控制。</p>
+
+<p><strong>Windows 用户</strong></p>
+
+<ol>
+  <li>请先退出所有杀毒软件</li>
+  <li>Windows XP 以上请使用管理员身份运行或赋予hosts文件可写权限</li>
+  <li>使用及更新: <a href="http://freedom.txthinking.com/fuckGFW-64.exe">fuckGFW-64.exe</a>(64位) / <a href="http://freedom.txthinking.com/fuckGFW-32.exe">fuckGFW-32.exe</a>(32位)双击运行</li>
+  <li>首次更新时会向hosts文件写入一行<code>#TX-HOSTS</code>, 后续更新会以此行做判断, 请不要删除它</li>
+</ol>
+
+<p><strong>*nix/OSX 用户</strong></p>
+
+<p>使用及更新: 打开终端运行</p>
+<pre><code>$ curl -s http://freedom.txthinking.com/fuckGFW.py | sudo python
 </code></pre>
 
-<p>看到其中的<code>open [-a &lt;application&gt;] [filenames] [--args arguments]</code>，及命令行说明<code>Help: Open opens files from a shell.</code>，所以如果我再 bash 中要用 Mou 打开<code>.md</code>的文件就应该在 shell 中输入</p>
+<hr />
 
-<blockquote>
-  <p>open -a mou filename.md</p>
-</blockquote>
+<p>必读技巧</p>
 
+<ul>
+  <li>请使用国际版google. 防止google本地化重定向: 访问一下<a href="https://www.google.com/ncr">https://www.google.com/ncr</a></li>
+  <li>请使用<code>https</code>替代<code>http</code>访问.</li>
+</ul>
+
+<p><a href="https://github.com/txthinking/google-hosts">有用的链接</a></p>
 
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/" title="用 github + jekyll-bootstrap 搭建个人 blog">&larr; 往前</a></li>
+        <li class="prev"><a href="/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience" title="开放科学工具箱模版库">&larr; 往前</a></li>
       
         <li><a href="/archive.html">归档</a></li>
       
-        <li class="next"><a href="/%E7%A7%91%E7%A0%94%E7%AC%94%E8%AE%B0/matlab" title="matlab文件读取">往后 &rarr;</a></li>
+        <li class="next disabled"><a>往后 &rarr;</a>
       
       </ul>
     </div>
@@ -161,7 +176,7 @@ Options:
   
   <div class="span4">
     <h4>发布时间</h4>
-    <div class="date"><span>28 December 2014</span></div>
+    <div class="date"><span>30 December 2014</span></div>
     </br>
 
     <h4>类别目录</h4>
@@ -191,9 +206,9 @@ Options:
 
   
      
-    	<li><a href="/tags.html#计算机-ref">计算机 <span>1</span></a></li>
+    	<li><a href="/tags.html#网络-ref">网络 <span>3</span></a></li>
      
-    	<li><a href="/tags.html#shell-ref">shell <span>1</span></a></li>
+    	<li><a href="/tags.html#翻墙-ref">翻墙 <span>2</span></a></li>
     
   
 
