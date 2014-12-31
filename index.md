@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 甄谨言的博客
-tagline: 化整为零
+tagline: stay foolish, stay hungry
 ---
 {% include JB/setup %}
 
