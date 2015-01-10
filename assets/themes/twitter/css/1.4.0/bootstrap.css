@@ -1,5 +1,5 @@
 html,body{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:2px 0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
 
 table{border-collapse:collapse;border-spacing:0;}
 
@@ -113,30 +113,30 @@ blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;c
 address{display:block;line-height:18px;margin-bottom:18px;}
 
 pre code {
-  margin: 0;
+  margin: 0 ; <!-- daquyu-->
   padding: 0;
   white-space: pre;
   border: none;
   background: transparent; }
   code, tt {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   border: 1px solid #eaeaea;
   white-space: nowrap;
   background-color: #f8f8f8;
   border-radius: 3px; }
 code,pre{
-margin: 0 3px;
-padding:4px 7px;
+margin: 0 4px 3px;
+padding:0 0; <!-- xiaoquyu-->
 border: 1px solid #eaeaea;
-font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-font-size:12px;}
+font-family:Terminal, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+font-size:15px;}
 
 pre{
-margin: 1px 0;
+margin: 3px 3px;
 background-color:#f8f8f8;
 padding:6px 10px;
-line-height:20px;
+line-height:25px;
 font-size:15px;
 overflow:auto;
 border:1px solid #cccccc;

@@ -128,3 +128,13 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
   
   markdown: redcarpet
+  redcarpet:
+    extensions:
+      - hard_wrap
+      - no_intra_emphasis
+      - autolink
+      - strikethrough
+      - fenced_code_blocks
+      - with_toc_data
+      - tables
+      - underline

@@ -5,10 +5,170 @@
         <description>首页 - </description>
         <link>http://Adominick.github.io</link>
         <link>http://Adominick.github.io</link>
-        <lastBuildDate>2014-12-31T11:57:16+08:00</lastBuildDate>
-        <pubDate>2014-12-31T11:57:16+08:00</pubDate>
+        <lastBuildDate>2015-01-10T19:53:52+08:00</lastBuildDate>
+        <pubDate>2015-01-10T19:53:52+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>使用Pandoc做些很酷的事</title>
+                <description>
+&lt;p&gt;&lt;em&gt;文/&lt;a href=&quot;/zcontact.html&quot; style=&quot;color:grey&quot;&gt;甄谨言&lt;/a&gt;&lt;/em&gt;
+&lt;code&gt;Pandoc&lt;/code&gt;使用Haskell语言编写，跨平台，可以转换几乎所有你能想到的文件格式，真的是转换神器。Haskell语言据说是一群高智商群体玩的东西，函数式编程语言的典范，而&lt;code&gt;Pandoc&lt;/code&gt;则是这门语言的优秀作&lt;!-- more --&gt;品之一。&lt;/p&gt;
+
+&lt;p&gt;光说它由多强大不足以信服人，我们在终端输入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc --help&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;于是开始显摆它的万能了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Input formats:  docbook, docx, epub, haddock, html, json, latex, markdown,
+                markdown_github, markdown_mmd, markdown_phpextra,
+                markdown_strict, mediawiki, native, opml, org, rst, t2t,
+                textile, twiki
+Output formats: asciidoc, beamer, context, docbook, docx, dokuwiki, dzslides,
+                epub, epub3, fb2, haddock, html, html5, icml, json, latex, man,
+                markdown, markdown_github, markdown_mmd, markdown_phpextra,
+                markdown_strict, mediawiki, native, odt, opendocument, opml,
+                org, pdf*, plain, revealjs, rst, rtf, s5, slideous, slidy,
+                texinfo, textile
+                [*for pdf output, use latex or beamer and -o FILENAME.pdf]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a name=&quot;t&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;本文目录&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#t1&quot;&gt;Pandoc的安装&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#t2&quot;&gt;Pandoc的配置&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#t3&quot;&gt;Pandoc的使用&lt;/a&gt;	&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-namet1a1-pandoc-&quot;&gt;&lt;a name=&quot;t1&quot;&gt;&lt;/a&gt;1. Pandoc 的安装&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Pandoc&lt;/code&gt;有两种安装方式&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;去网站&lt;a href=&quot;https://github.com/jgm/pandoc/releases/&quot;&gt;Releases · jgm/pandoc&lt;/a&gt;下载安装包&lt;/li&gt;
+  &lt;li&gt;通过Haskell平台安装，此方式适合于想学习Haskell这门编程语言的人, 安装参考&lt;a href=&quot;http://www.yangzhiping.com/tech/pandoc.html&quot;&gt;http://www.yangzhiping.com/tech/pandoc.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-namet2a2-pandoc&quot;&gt;&lt;a name=&quot;t2&quot;&gt;&lt;/a&gt;2. Pandoc的配置&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Pandoc&lt;/code&gt; 的一切命令可以在 shell 中完成，但是为了能够实时修改编辑的效果，我们需要和其他编辑器、软件搭配起来使用，下面给出一些建议&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;作者用的是&lt;a href=&quot;https://github.com/textmate/textmate&quot;&gt;textmate&lt;/a&gt; + Marked 2&lt;/li&gt;
+  &lt;li&gt;多数Pandoc用户使用的是&lt;a href=&quot;https://github.com/vim-pandoc/vim-pandoc&quot;&gt;vim-pandoc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Linux/windows 用户可以考虑使用&lt;a href=&quot;https://github.com/elerao/Smark&quot;&gt;Smark&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-namet3a3-pandoc&quot;&gt;&lt;a name=&quot;t3&quot;&gt;&lt;/a&gt;3. Pandoc的使用&lt;/h2&gt;
+
+&lt;h3 id=&quot;markdown-to-tex&quot;&gt;3.1 .markdown to .tex&lt;/h3&gt;
+&lt;p&gt;学院工作者用来发文章用的最多的恐怕就是 Latex 了，Latex 可以排版出优美的数学公式，几乎是科学期刊和大型图书的标准规范。但是， 学习Latex并不像 Microsoft Word 那样所见即所得、容易上手。相信平时写些总结、report、博客 之类的都很难用 Latex，转而用语法比较简单地 markdown 和 Word。&lt;code&gt;Pandoc&lt;/code&gt; 就提供了一种把这效率和形式结合起来的可能性，你可以用 markdown 写文章，然后用&lt;code&gt;Pandoc&lt;/code&gt; 转换为.tex 和.docx 进行编辑，.markdown to .tex使公式排版可以依然使用 Latex 语言。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc -N --toc --latex-engine=xelatex --template=pmtemplate.latex input.md -o output.tex&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下面对其中的命令分别说明下&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;-N&lt;/code&gt;:为每个章节加上编号&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;--toc&lt;/code&gt;:增添目录&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;--latex-engine=xelatex&lt;/code&gt;:用 XeLatex 编译&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;--template=pmtemplate.latex&lt;/code&gt;:使用当前目录下地模板&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;-o&lt;/code&gt;:后面紧接你要输出的文件名及类型
+  点击下载&lt;a href=&quot;https://github.com/tzengyuxio/pages/tree/gh-pages/pandoc&quot;&gt;pmtemplate.latex&lt;/a&gt;模板&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pandoc-&quot;&gt;3.2 使用 Pandoc 做一些很酷的事&lt;/h3&gt;
+
+&lt;p&gt;1.用 markdown 语言写 PPT 的提纲，然后输出 PPT 的 pdf 格式，&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc --template=beamer-template.tex --latex-engine=xelatex -s -i -t beamer [SLIDES.md](http://johnmacfarlane.net/pandoc/demo/SLIDES) -o output.pdf&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对上面命令行用到的参数进行说明&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;-s&lt;/code&gt;:加上页眉、页尾&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;-i&lt;/code&gt;: PPT 放映采用渐进式&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;-t beamer&lt;/code&gt;: 输出采用幻灯片样式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2.用 markdown 语言写 PPT 的提纲，然后输出 PPT 的 Html 格式，并且有多种模板选择&lt;/p&gt;
+
+&lt;p&gt;目前Pandoc包含了对五种HTML幻灯片框架的支持：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/paulrouget/dzslides&quot;&gt;dzslides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3.org/Talks/Tools/Slidy2/#(1)&quot;&gt;Slidy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://meyerweb.com/eric/tools/s5/&quot;&gt;S5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://goessner.net/articles/slideous/slideous.html&quot;&gt;Slideous&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js/#/&quot;&gt;reveal.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;S5、Slideous、reveal.js需要安装，安装过程可以参考&lt;a href=&quot;http://www.soimort.org/posts/165/&quot;&gt;http://www.soimort.org/posts/165/&lt;/a&gt;
+下面直接把坐着常用的写下来&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc -s --latexmathml --self-contained -i -t dzslides SLIDES.md -o SLIDESa.html
+pandoc -s --latexmathml --self-contained -i -t slidy SLIDES.md -o SLIDESb.html
+pandoc -s --latexmathml --self-contained -i -t revealjs SLIDES.md -o SLIDESc.html
+pandoc -s --latexmathml --self-contained -i -t s5 SLIDES.md -o output.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;点击查看文件效果&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demo/SLIDES&quot;&gt;SLIDES.md&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demo/example16a.html&quot;&gt;SLIDESa.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demo/example16b.html#(1)&quot;&gt;SLIDESb.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demo/example16d.html#/&quot;&gt;SLIDESc.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：要使 Latex公式 编译成功，还需要去&lt;a href=&quot;http://math.etsu.edu/LaTeXMathML/&quot;&gt;A Brief Introduction to LaTeXMathML&lt;/a&gt;下载下面两个文档到当前文件夹，&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js&quot;&gt;LaTeXMathML.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css&quot;&gt;LaTeXMathML.standardarticle.css&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;并且在生成后的 html 文件写入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;LaTeXMathML.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;LaTeXMathML.standardarticle.css&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;有用的链接&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Green&#39;s_function_(many-body_theory)&quot;&gt;Green’s function (many-body theory) - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pages.tzengyuxio.me/pandoc/&quot;&gt;Pandoc’s Markdown 語法中文翻譯&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demos.html&quot;&gt;Pandoc - Demos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/README.html&quot;&gt;Pandoc - Pandoc User’s Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yangsan.github.io/tag/pandoc.html&quot;&gt;煎挠橙的blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.soimort.org/posts/165/&quot;&gt;Mort | Markdown+Pandoc→HTML幻灯片速成&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.yangzhiping.com/tech/pandoc.html&quot;&gt;Markdown写作进阶：Pandoc入门浅谈 - 阳志平的网志&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yanping.me/cn/blog/2012/03/13/pandoc/&quot;&gt;黑魔法利器pandoc - 雁起平沙的网络日志&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_5ee56d450101dah2.html&quot;&gt;利用Pandoc将markdown文件转化为pdf_loongfee_新浪博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://higrid.net/c-art-pandoc.htm&quot;&gt;使用Pandoc转换markdown等文本文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html&quot;&gt;pandoc中文pdf转换攻略&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/justjavac.github.com/blob/master/_posts/jekyll/2012-03-31-markdown-syntax.md&quot;&gt;Markdown 语法说明 (简体中文版)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;#t&quot;&gt;返回目录&lt;/a&gt;&lt;/div&gt;
+</description>
+                <link>http://Adominick.github.io/%E6%95%88%E7%8E%87/pandoc</link>
+                <guid>http://Adominick.github.io/%E6%95%88%E7%8E%87/pandoc</guid>
+                <pubDate>2015-01-10T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>最简单方法翻墙修改hosts</title>
@@ -35,6 +195,9 @@
 &lt;p&gt;使用及更新: 打开终端运行&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ curl -s http://freedom.txthinking.com/fuckGFW.py | sudo python
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果连接断断续续，请尝试 smartGoogle 项目&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo wget https://smarthosts.googlecode.com/svn/trunk/hosts -O /etc/hosts&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;OSX 用户请先用 Homebrew 安装 wget&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -45,7 +208,9 @@
   &lt;li&gt;请使用&lt;code&gt;https&lt;/code&gt;替代&lt;code&gt;http&lt;/code&gt;访问.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/txthinking/google-hosts&quot;&gt;有用的链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/txthinking/google-hosts&quot;&gt;有用的链接1&lt;/a&gt;
+&lt;a href=&quot;https://code.google.com/p/smarthosts/wiki/installation&quot;&gt;有用的链接2&lt;/a&gt;
+&lt;a href=&quot;https://code.google.com/p/openwrt-smarthosts-autoddvpn/&quot;&gt;有用的链接3&lt;/a&gt;&lt;/p&gt;
 </description>
                 <link>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/host</link>
                 <guid>http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/host</guid>
@@ -726,6 +891,7 @@ rm -rf ./.git/
   &lt;li&gt;&lt;a href=&quot;http://truongtx.me/&quot;&gt;Truongtx’s Blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://liberize.me/&quot;&gt;liberize’s blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://loftor.com/&quot;&gt;loftor’s blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jser.me/2013/07/28/%E6%97%A7blog%E8%BF%81%E7%A7%BB%E5%88%B0jekyll+github.html&quot;&gt;旧blog迁移到jekyll+github&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>

@@ -9,6 +9,7 @@ http://Adominick.github.io/sitemap.txt
 http://Adominick.github.io/tags.html
 http://Adominick.github.io/zcontact.html
 
+http://Adominick.github.io/%E6%95%88%E7%8E%87/pandoc
 http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/host
 http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/openscience
 http://Adominick.github.io/%E9%94%A4%E7%82%BC%E6%8A%80%E8%83%BD/goagent
