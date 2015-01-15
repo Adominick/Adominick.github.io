@@ -4,7 +4,7 @@
  <title>首页</title>
  <link href="http://Adominick.github.io/" rel="self"/>
  <link href="http://Adominick.github.io"/>
- <updated>2015-01-10T19:53:52+08:00</updated>
+ <updated>2015-01-10T20:28:48+08:00</updated>
  <id>http://Adominick.github.io</id>
  <author>
    <name></name>
@@ -154,7 +154,6 @@ pandoc -s --latexmathml --self-contained -i -t s5 SLIDES.md -o output.html
 
 &lt;h2 id=&quot;section&quot;&gt;有用的链接&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Green&#39;s_function_(many-body_theory)&quot;&gt;Green’s function (many-body theory) - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://pages.tzengyuxio.me/pandoc/&quot;&gt;Pandoc’s Markdown 語法中文翻譯&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/demos.html&quot;&gt;Pandoc - Demos&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://johnmacfarlane.net/pandoc/README.html&quot;&gt;Pandoc - Pandoc User’s Guide&lt;/a&gt;&lt;/li&gt;
