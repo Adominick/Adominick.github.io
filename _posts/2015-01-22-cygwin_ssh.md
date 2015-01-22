@@ -18,7 +18,7 @@ _文/<a href="{{site.url}}/zcontact.html" style="color:grey">甄谨言</a>_ 习�
  
 2.  <a href="#t2">openssh的安装</a>
  
-3.  <a href="#t3">title3</a>
+3.  <a href="#t3">ssh 的配置</a>
  
 ---
 ## <a name="t1"></a>1.Cygwin 的安装
@@ -70,4 +70,6 @@ cat id_rsa.pub >> authorized_keys</code></pre>
  下面展示一张远程登录成功初始界面提示：
  
  ![登录界面](http://7u2ofy.com1.z0.glb.clouddn.com/cygwin_ssh.png)
+ 
+
 <div align="right"><a href="#t">返回目录</a></div>
