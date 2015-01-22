@@ -21,12 +21,14 @@ _文/<a href="{{site.url}}/zcontact.html" style="color:grey">甄谨言</a>_ 习�
 3.  <a href="#t3">ssh 的配置</a>
  
 ---
+
 ## <a name="t1"></a>1.Cygwin 的安装
  
  - 32位电脑[下载地址](http://cygwin.com/setup-x86.exe)
  - 64位电脑[下载地址](http://cygwin.com/setup-x86_64.exe)
  
  下载注意事项：
+ 
  - 选择中国地镜像**.cn
  - 如果需要Cygwin能够编译程序，需要安装gcc，用鼠标点开组件列表中的“Devel”分支，在该分支下，有很多组件， 选择：binutils，gcc，gcc-mingw，gdb
  
@@ -58,7 +60,9 @@ apt-cyg安装源为ftp://mirror.mcs.anl.gov，设置改为网易镜像源。
   
   当询问about the value of CYGWIN environment variable enter 时输入 ntsec tty
   
-  输入 `cygrunsrv --start sshd` 或者 `net start sshd`启动sshd，输入`cygrunsrv --stop sshd` 或者 `net stop sshd`停止sshd
+  输入 `cygrunsrv --start sshd` 或者 `net start sshd`启动sshd，
+  
+  输入`cygrunsrv --stop sshd` 或者 `net stop sshd`停止sshd
  
   在 terminal 中输入：
   
