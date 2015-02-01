@@ -21,9 +21,9 @@ _文/<a href="{{site.url}}/zcontact.html" style="color:grey">甄谨言</a>_
  
 Fourier Transform in Methematica:
 
-<pre><code>list = Table[10 Sin[2 \[Pi] n] + Sin[6 \[Pi] n], {n, 0, 1000, 0.1}];
+```list = Table[10 Sin[2 \[Pi] n] + Sin[6 \[Pi] n], {n, 0, 1000, 0.1}];
 ListLinePlot[Sqrt[4/1000] Abs[Fourier[list]], DataRange -> {0, 9.999},
-  PlotRange -> {{0, 9.999/2}, All}]</code></pre>
+  PlotRange -> {{0, 9.999/2}, All}]```
 
 or
 
