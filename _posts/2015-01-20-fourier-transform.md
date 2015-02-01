@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "学习傅里叶变换"
 description: "工程领域很重要的一门技术"
@@ -19,4 +19,15 @@ _文/<a href="{{site.url}}/zcontact.html" style="color:grey">甄谨言</a>_
 * [Fourier series - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Fourier_series)
 * [research.stowers-institute.org/efg/Report/FourierAnalysis.pdf](http://research.stowers-institute.org/efg/Report/FourierAnalysis.pdf)
  
+Fourier Transform in Methematica:
+
+<pre><code>list = Table[10 Sin[2 \[Pi] n] + Sin[6 \[Pi] n], {n, 0, 1000, 0.1}];
+ListLinePlot[Sqrt[4/1000] Abs[Fourier[list]], DataRange -> {0, 9.999},
+  PlotRange -> {{0, 9.999/2}, All}]</code></pre>
+
+or
+
+<pre><code>Periodogram[list, PlotRange -> All]</code></pre>
+
+
 <div align="right"><a href="#t">返回目录</a></div>
