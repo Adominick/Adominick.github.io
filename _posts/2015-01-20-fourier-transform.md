@@ -23,7 +23,7 @@ Fourier Transform in Methematica:
 
 	list = Table[10 Sin[2 \[Pi] n] + Sin[6 \[Pi] n], {n, 0, 1000, 0.1}];
 	ListLinePlot[Sqrt[4/1000] Abs[Fourier[list]], DataRange -> {0, 9.999},
-	  PlotRange -> {{0, 9.999/2}, All}]
+	  PlotRange -> { {0, 9.999/2}, All}]
 
 or
 
